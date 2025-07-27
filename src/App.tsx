@@ -34,7 +34,9 @@ const App = () => {
   useEffect(() => {
     fetchPosts();
     const intervalId = setInterval(fetchPosts, 5000);
-    debugger;
+
+    // debugger;
+     //для проверки
     return () => clearInterval(intervalId);
   }, []);
 
